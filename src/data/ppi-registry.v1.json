@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "source": "vendor published specifications — verify before each release",
+  "metrics": [
+    { "vendor": "KDP",          "stock": "White 50lb",       "ppi": 434 },
+    { "vendor": "KDP",          "stock": "Cream 55lb",       "ppi": 400 },
+    { "vendor": "KDP",          "stock": "Standard Color",   "ppi": 476 },
+    { "vendor": "IngramSpark",  "stock": "White 50lb",       "ppi": 526 },
+    { "vendor": "IngramSpark",  "stock": "Cream 55lb",       "ppi": 434 },
+    { "vendor": "Lulu",         "stock": "White 50lb",       "ppi": 444 }
+  ]
+}
