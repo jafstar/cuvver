@@ -34,26 +34,37 @@ export default function Page() {
         <div className="flex items-center justify-between border-b border-[#2e3039] pb-4">
           <div className="flex items-center space-x-2">
             <span className="inline-block w-2.5 h-2.5 rounded-full bg-[#4ade80]" />
-            <span className="text-[#f4f5f6] text-xs font-bold tracking-wider">CUVVER.APP // STACK_CORE</span>
+            <span className="text-[#f4f5f6] text-xs font-bold tracking-wider">CUVVER.APP // PRINT_LAYOUT</span>
           </div>
           <span className="text-[#626875] text-xs">REGISTRY: {registryVersion}</span>
         </div>
 
         <div className="space-y-3">
-          <h1 className="text-[#f4f5f6] text-xl font-bold tracking-tight">SyncAgent Guard Architecture</h1>
+          <h1 className="text-[#f4f5f6] text-xl font-bold tracking-tight leading-snug">
+            Your cover was rejected.<br />
+            The spine was off.
+          </h1>
           <p className="text-sm leading-relaxed">
-            Isolated execution loop testing print asset layout parameters against hard filesystem contracts.
+            KDP, IngramSpark, and Lulu each calculate spine width differently.
+            Get the exact dimensions for your page count, paper type, and trim size — before you upload.
           </p>
         </div>
 
+        <a
+          href="/calculate"
+          className="block w-full text-center bg-[#4ade80] text-[#0d0e11] font-bold text-sm py-3 px-4 rounded-sm hover:bg-[#86efac] transition-colors tracking-wider"
+        >
+          → CALCULATE MY COVER DIMENSIONS
+        </a>
+
         <div className="grid grid-cols-2 gap-4 border-t border-[#2e3039] pt-4 text-xs">
           <div>
-            <span className="block text-[#626875] font-bold uppercase tracking-wider mb-1">Active Targets</span>
-            <span className="text-[#f4f5f6] font-medium">Print Manufacturing Engine</span>
+            <span className="block text-[#626875] font-bold uppercase tracking-wider mb-1">Platforms</span>
+            <span className="text-[#f4f5f6] font-medium">KDP · IngramSpark · Lulu</span>
           </div>
           <div>
-            <span className="block text-[#626875] font-bold uppercase tracking-wider mb-1">Data Records</span>
-            <span className="text-[#f4f5f6] font-medium">{registryData.length} Verified PPI Specs</span>
+            <span className="block text-[#626875] font-bold uppercase tracking-wider mb-1">PPI Records</span>
+            <span className="text-[#f4f5f6] font-medium">{registryData.length} Verified Specs</span>
           </div>
         </div>
 
@@ -61,8 +72,8 @@ export default function Page() {
           <a href="https://github.com/jafstar/cuvver" className="text-[#3b82f6] hover:underline" target="_blank" rel="noopener noreferrer">
             → View on GitHub
           </a>
-          <a href="https://syncagent.work" className="text-[#626875] hover:text-[#9da3ae]" target="_blank" rel="noopener noreferrer">
-            Powered by SyncAgent
+          <a href="https://aint.farm" className="text-[#626875] hover:text-[#9da3ae]" target="_blank" rel="noopener noreferrer">
+            Powered by AInt.farm
           </a>
         </div>
 
