@@ -162,6 +162,25 @@ export default function CalculatePage() {
             <div className="border-t border-[#2e3039] pt-3 text-xs text-[#626875]">
               PPI source: {result.ppi} · registry v{(registryJson as { version: string }).version}
             </div>
+
+            <Link
+              href={{
+                pathname: '/guide',
+                query: {
+                  vendor,
+                  stock: activeStock,
+                  pageCount: String(pageCount),
+                  trim: trim.label,
+                  ppi: String(result.ppi),
+                  spine: String(result.spineWidth_in),
+                  totalWidth: String(result.totalWidth_in),
+                  totalHeight: String(result.totalHeight_in),
+                },
+              }}
+              className="block text-center text-xs font-bold px-3 py-2.5 border border-[#3b82f6] text-[#3b82f6] bg-[#3b82f6]/10 rounded-sm hover:bg-[#3b82f6]/20 transition-colors"
+            >
+              Get Setup Guide →
+            </Link>
           </div>
         ) : (
           <div className="border border-[#2e3039] bg-[#12141c] rounded-sm p-5 text-[#626875] text-sm">
